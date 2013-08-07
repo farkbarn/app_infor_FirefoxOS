@@ -1,0 +1,27 @@
+{
+    "version": "1.0",
+    "name": "El Informador Movil",
+    "description": "Versión para FirefoxOS - El Informador - Frank Barrera",
+    "launch_path": "/index.html",
+    "icons": {
+        "128": "/img/logo.png"
+    },
+    "developer": {
+        "name": "Frank Barrera",
+        "url": "https://plus.google.com/114590264993630903402/posts/p/pub"
+    },
+    "installs_allowed_from": ["*"],
+    "locales": {
+        "en": {
+            "description": "FirefoxOS Version - The Informer - Frank Barrera",
+            "developer": {
+                "name": "Frank Barrera",
+                "url": "https://plus.google.com/114590264993630903402/posts/p/pub"
+            }
+        }
+    },
+    "default_locale": "es",
+    "permissions": {     
+    },
+    "fullscreen": "true"
+}
