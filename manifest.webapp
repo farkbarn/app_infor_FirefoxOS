@@ -4,7 +4,7 @@
     "description": "Versión para FirefoxOS - El Informador - Frank Barrera",
     "launch_path": "http://www.elinformador.com.ve",
     "icons": {
-        "128": "/img/logo2.png"
+        "60": "/img/logo2.png"
     },
     "developer": {
         "name": "Frank Barrera",
