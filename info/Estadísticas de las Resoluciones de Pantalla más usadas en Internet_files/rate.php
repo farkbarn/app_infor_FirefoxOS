@@ -1,0 +1,6 @@
+PDRTJS_4802759_comm_72161.nero_up = 0;
+PDRTJS_4802759_comm_72161.nero_dn = 0;		
+PDRTJS_settings_4802759_comm_72161= {"type" : "nero","star_color" : "hand","size" : "sml","custom_star" : "","font_align" : "left","font_position" : "top","font_family" : "arial","font_size" : "10px","font_line_height" : "16px","font_bold" : "bold","font_italic" : "normal","text_vote" : "Vote","text_votes" : "Votes","text_rate_this" : "","text_1_star" : "Very Poor","text_2_star" : "Poor","text_3_star" : "Average","text_4_star" : "Good","text_5_star" : "Excellent","text_thank_you" : "","text_rate_up" : "","text_rate_down" : "","font_color" : "636577","text_popcontent" : "Mejores Comentarios","text_close" : "Cerrar","text_all" : "Siempre","text_today" : "Hoy","text_thisweek" : "Esta Semana","text_thismonth" : "Este Mes","text_rated" : "Votado","text_noratings" : "No existen datos para este periodo","popup" : "on"};
+PDRTJS_4802759_comm_72161.init();		
+PDRTJS_4802759_comm_72161.token='983d12edd3a1226201c86d067b4d6698';
+/*4802759,_comm_72161,wp-comment-72161,3356202690,0-0*/

@@ -1,0 +1,1 @@
+(function(){stButtons.processCB({"google_search":498,"clicks_total":502,"facebook":2,"twitter":2,"time":3,"total":502,"url":"http:\/\/www.returngis.net\/2012\/05\/css-media-queries-responsive-web-design\/","ourl":"http:\/\/www.returngis.net\/2012\/05\/css-media-queries-responsive-web-design\/"})})();
