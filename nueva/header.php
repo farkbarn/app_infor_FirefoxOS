@@ -57,34 +57,34 @@ $(function() {
 <!-- PUBLICIDAD -->
 			<div class="zon_pub">
 				<div id="zon_pub_A">
-					<?php include("pub/zon_A.html");?>
+					<?php include("zon_pub/zon_A.html");?>
 				</div>
 			</div>
 			<div class="limpiar"></div>
 			<div class="zon_pub">
 				<div id="zon_pub_B">
-					<?php include("pub/zon_B.html");?>
+					<?php include("zon_pub/zon_B.html");?>
 				</div>
 				<div id="zon_pub_B_2">
-					<?php include("pub/zon_B2.html");?>
+					<?php include("zon_pub/zon_B2.html");?>
 				</div>
 			</div>
 			<div class="limpiar"></div>
 			<div class="zon_pub">
 				<div id="zon_pub_C">
-					<?php include("pub/zon_C.html");?>
+					<?php include("zon_pub/zon_C.html");?>
 				</div>
 				<div id="zon_pub_C_2">
-					<?php include("pub/zon_C2.html");?>
+					<?php include("zon_pub/zon_C2.html");?>
 				</div>
 			</div>
 			<div class="limpiar"></div>
 			<div class="zon_pub">
 				<div id="zon_pub_D">
-					<?php include("pub/zon_D.html");?>
+					<?php include("zon_pub/zon_D.html");?>
 				</div>
 				<div id="zon_pub_D_2">
-					<?php include("pub/zon_D2.html");?>
+					<?php include("zon_pub/zon_D2.html");?>
 				</div>
 			</div>
 			<div class="limpiar"></div>
@@ -175,7 +175,7 @@ $(function() {
 			<div class="limpiar"></div>
 				<div class="zon_pub">
 					<div id="zon_pub_E">
-						<?php include("pub/zon_E.html");?>
+						<?php include("zon_pub/zon_E.html");?>
 					</div>
 				</div>
 			<div class="limpiar"></div>
