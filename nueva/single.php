@@ -37,5 +37,4 @@
 						<?php include("col2.php");?>
 					</div><!-- FIN NOTICIA -->
 						<?php include("widget.php");?>
-<!-- NOTICIAS SEGUNDA MITAD -->
 <?php get_footer(); ?>

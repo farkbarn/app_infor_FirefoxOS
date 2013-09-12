@@ -42,7 +42,7 @@
 							<?php if(has_post_thumbnail()): // si tiene imagen 
 								$pimagen =  wp_get_attachment_image_src( get_post_thumbnail_id(), 'full', false );
 							?>
-								<img align="center" src="<?php echo $pimagen[0];?>" alt="<?php echo $tit;?>" width="100%" height="100%" />
+								<a href="<?php echo $link;?>"> <img align="center" src="<?php echo $pimagen[0];?>" alt="<?php echo $tit;?>" width="100%" height="100%" /></a>
 							<?php endif ?>
 							</div>
 								<p class="txt_not"> <span><?php the_time('h:i A');?> | <a href="<?php echo $cat_link;?>"><? echo $nom_cat;?> </a> | </span><?php the_excerpt_max_charlength(180);?></p>
@@ -81,7 +81,7 @@
 								<?php if(has_post_thumbnail()): // si tiene imagen 
 									$pimagen =  wp_get_attachment_image_src( get_post_thumbnail_id(), 'full', false );
 								?>
-									<img class="fot_not" align="center" src="<?php echo $pimagen[0];?>" alt="<?php echo $tit;?>" width="100%" height="100%" />
+									<a href="<?php echo $link;?>"><img class="fot_not" align="center" src="<?php echo $pimagen[0];?>" alt="<?php echo $tit;?>" width="100%" height="100%" /></a>
 								<?php endif ?>
 								</div>
 								<h2 class="tit_not"><a href="<?php echo $link;?>"><?php echo substr($tit,0,45)?><span> [...]</span></a></h2>
@@ -156,7 +156,7 @@
 								<?php if(has_post_thumbnail()): // si tiene imagen 
 									$pimagen =  wp_get_attachment_image_src( get_post_thumbnail_id(), 'full', false );
 								?>
-									<img align="center" src="<?php echo $pimagen[0];?>" alt="<?php echo $tit;?>" width="100%" height="100%" />
+									<a href="<?php echo $link;?>"><img align="center" src="<?php echo $pimagen[0];?>" alt="<?php echo $tit;?>" width="100%" height="100%" /></a>
 								<?php endif ?>
 								</div>
 									<p class="txt_not"> <span><?php the_time('h:i A');?> | <a href="<?php echo $cat_link;?>"><? echo $nom_cat;?> </a> | </span><?php the_excerpt_max_charlength(180);?></p>
@@ -195,7 +195,7 @@
 								<?php if(has_post_thumbnail()): // si tiene imagen 
 									$pimagen =  wp_get_attachment_image_src( get_post_thumbnail_id(), 'full', false );
 								?>
-									<img class="fot_not" align="center" src="<?php echo $pimagen[0];?>" alt="<?php echo $tit;?>" width="100%" height="100%" />
+									<a href="<?php echo $link;?>"><img class="fot_not" align="center" src="<?php echo $pimagen[0];?>" alt="<?php echo $tit;?>" width="100%" height="100%" /></a>
 								<?php endif ?>
 								</div>
 								<h2 class="tit_not"><a href="<?php echo $link;?>"><?php echo substr($tit,0,45)?><span> [...]</span></a></h2>
