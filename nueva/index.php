@@ -84,7 +84,7 @@
 									<a href="<?php echo $link;?>"><img class="fot_not" align="center" src="<?php echo $pimagen[0];?>" alt="<?php echo $tit;?>" width="100%" height="100%" /></a>
 								<?php endif ?>
 								</div>
-								<h2 class="tit_not"><a href="<?php echo $link;?>"><?php echo substr($tit,0,45)?><span> [...]</span></a></h2>
+								<h2 class="tit_not"><a href="<?php echo $link;?>"><?php echo substr($tit,0,45);?><span> [...]</span></a></h2>
 								<p class="txt_not"> <span><?php the_time('h:i A');?> | <a href="<?php echo $cat_link;?>"><? echo $nom_cat;?> </a> | </span><?php the_excerpt_max_charlength(80);?></p>
 							</div>
 							<div class="espacio05"></div>

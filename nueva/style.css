@@ -19,9 +19,10 @@ h2 {color: black; font-weight: bold; font-size: 12px;}
 h1 {color: black; font-weight: bold; font-size: 16px;}
 a{text-decoration:none;}
 a:focus, a:active { outline: none;}
-a:hover{opacity:0.5;}
+a:hover{opacity:0.7;}
 .p{font-family: ′roboto′, Arial, serif; font-weight: 400; }
 h1 h1 a h2 h2 a { line-height: 1.2em; }
+article {padding:0;margin:0;line-height:0em;}
 
 #contenedor{width:/*75%*/988px;color:black;background-color:rgb(214, 214, 214);/*#f9e9d9;*/margin:15px auto; border-radius: 10px;padding:3px;}
 .espacio03{height: 3px;width:100%;}
@@ -34,7 +35,7 @@ h1 h1 a h2 h2 a { line-height: 1.2em; }
 /* =====================
  *	ZONA DE PUBLICIDAD
  * ===================== */
-.zon_pub{width:100%;margin:1px auto;}
+.zon_pub{width:100%;margin:1px 0 0 0 auto;}
 #zon_pub_A{width:100%;}
 #zon_pub_B{width:78%;float:left;}
 #zon_pub_B_2{width:20.2%;float:right;}
@@ -55,23 +56,22 @@ background: -ms-linear-gradient(left, #ba360b 0%,#ff670f 100%); /* IE10+ */
 background: linear-gradient(to right, #ba360b 0%,#ff670f 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba360b', endColorstr='#ff670f',GradientType=1 ); /* IE6-9 */
 }
+#cont_silueta{height:100%;}
 #sil_izq{width:55%;height:100%; float:left;}
 #img_sil{height: 90%;margin-top: 4%;}
 .img_sil_2{width:100%;height: 100%;border-radius: 0 10px 10px 0;}
 #sil_der{width:45%;height:100%; float:right;}
 #txt_sil{font-size: 11px;}
-#tit_sil_cod{}
-.tit_sil{background-color:#ffb266;border-radius: 10px 10px 0 10px;text-align:center;line-height:1.5em;padding:5px 3px 5px 3px; margin-top: 8px;}
+.tit_sil{background-color:rgb(194, 194, 194)/*#ffb266*/;border-radius: 10px 10px 0 10px;text-align:center;line-height:1.5em;padding:5px 3px 5px 3px; margin-top: 8px;}
 .tit_sil a{text-decoration:none; color: white; font-weight: bold;}
-.ext_sil{text-align:left;line-height:1.2em;padding:5px 5px 5px 5px; margin-top: 10px;}
+.ext_sil{text-align:left;line-height:1.5em;padding:5px 5px 5px 5px; margin-top: 10px;}
+
 #bot_sil{/*margin-top:30px;*/float:right; margin-right:50px;}
 #bot_sil{border-radius: 5px;color: black;margin-bottom:0px;}
-
 #bot_sil .nav #prev2 {text-align:right;text-decoration:none; color: white;}
 #bot_sil .nav #prev2 a:focus, a:active { outline: none;}
 #bot_sil .nav #prev2 a:hover{opacity:0.5}
-
-#bot_sil .nav #next2 {text-align:right;text-decoration:none; color: white;}
+s#bot_sil .nav #next2 {text-align:right;text-decoration:none; color: white;}
 #bot_sil .nav #next2 a:focus, a:active { outline: none;}
 #bot_sil .nav #next2 a:hover{opacity:0.5}
 
@@ -87,7 +87,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba360b', end
 .fb {width:25%;height:100%;float:left; background:url("img/icons.png") no-repeat;background-position-y:-108px;}
 .rss {width:25%;height:100%;float:left; background:url("img/icons.png") no-repeat;background-position-y:-54px;}
 .yt {width:25%;height:100%;float:left; background:url("img/icons.png") no-repeat;background-position-y:-27px;}
-.fecha{/*display: none;*/margin:30px 0 0 30px; font-size: 10px; font-weight: normal;}
+.fecha{/*display: none;*/margin:20px 0 0 30px; font-size: 12px; font-weight: normal;}
 #redes{height: 27px; width:120px;margin-top:90px; margin-left:20px; }
 /* ==============
  * 		MENU
@@ -163,8 +163,13 @@ margin-bottom:5px; margin-top: -50px;}
  *   MARQUESINA
  * ==============*/
 #marquesina {width:100%;font-size: 12px;}
-#rapida{width: 14%; font:10px; height: 20px; padding-top:8px; float:left; background-color:green; text-align:center; border-radius: 15px 0 0 0 ; line-height:0.8em;font-weight:bold;color:white;}
-#marq_tit{color: black; width: 86%; height: 20px; padding-top:8px; float:right; background-color:rgb(194, 194, 194); border-radius: 0 15px 0 0 ;font-weight:normal;line-height:0.8em;}
+#rapida {width: 14%; height: 28px;float:left; background-color:rgb(243, 99, 8); border-radius: 15px 0 0 0 ;}
+#rapida p{font-size:12px; text-align:center; font-weight:bold;color:white;}
+#marq_tit{color: black; width: 86%; height: 28px; float:right; background-color:rgb(243, 99, 8);/*rgb(173, 168, 168)rgb(194, 194, 194)*/ border-radius: 0 15px 0 0 ;font-weight:normal;line-height:0.8em;}
+#marq_tit article{padding:9px 0 0 5px; font-size:14px; font-weight:bold;}
+#marq_tit article a{text-decoration:none; color:white/*#ec5c00*/;}
+#marq_tit article a:focus, a:active { outline: none;}
+#marq_tit article a:hover{opacity:0.7;}
 
 /* ==============
  *     SLIDER
@@ -190,6 +195,8 @@ margin-bottom:5px; margin-top: -50px;}
 /* ==============
  *    NOTICIAS
  * ============== */
+.alignnone, .size-medium{width:100%;}
+
 .noticias_sup,.noticias_inf {float:left; width: 69.2%;}
 
 .not_col_1 {float:left; width: 69%;line-height:1.7em;}
@@ -296,3 +303,95 @@ font-size:12px; /*line-height:30px;*/ border-radius:0 20px 20px 0; -webkit-borde
 object[classid$=":D27CDB6E-AE6D-11cf-96B8-444553540000"], object[codebase*="swflash.cab"], object[type="application/x-shockwave-flash"], embed[type="application/x-shockwave-flash"], embed[src$=".swf"] { position: relative; z-index: -1000 !important; }
 
 
+
+
+
+
+
+
+/*********************************************** D E P O R T E S ***********************************************/
+.wp-polls p { padding: 2px 10px; }
+.widget { margin-bottom: 15px; }
+.widget ul { background: #ebefee; padding: 15px 10px 10px 10px; margin: 0px; list-style: none; }
+.widget ul li { color: #ec5c00; font-weight: bold; margin: 0px 0px 5px; padding: 10px 5px; background: #f9fafa; -webkit-border-radius: 3px 3px; -moz-border-radius: 3px / 3px; border-radius: 3px / 3px; }
+.widget ul li:last-child { border: none; }
+.widget ul li a { text-decoration: none; color: #1a1a1a; font-weight: normal; }
+.widget ul li a:hover { text-decoration: underline; }
+table#wp-calendar { border: 1px solid #cccccc; width: 100%; margin-bottom: 10px; }
+table#wp-calendar caption { font-family: Georgia,serif; font-size: 16px; font-weight: bold; width: 100%; background: #ebefee; height: 35px; padding: 8px 0px; -webkit-border-radius: 5px 5px; -moz-border-radius: 5px / 5px; border-radius: 5px / 5px; }
+tbody .pad { background-color: #ebefee; }
+table#wp-calendar > tbody > tr > td > a { font-weight: bold; /*color:#8796A5;
+color:#333333;*/ font-size: 16px; font-family: arial narrow, arial, garamond, palatino linotype, times new roman, bookman old style; color: #3c4a55; }
+thead > tr > th { width: 35px; height: 35px; text-align: center; background-color: #ebefee; border: 1px solid #cccccc; }
+tbody > tr > td { width: 30px; height: 30px; text-align: center; border: 1px solid #cccccc; }
+tfoot > tr > td > a { font-weight: bold; font-size: 18px; height: 20px; font-family: garamond, bookman old style, times new roman, arial narrow, arial; color: #5b7085; /*color:#3c4a55;*/ }
+tfoot > tr > td > a:link, tfoot > tr > td > a:visited, tfoot > tr > td > a:hover, tfoot > tr > td > a:active { font-weight: bold; font-size: 18px; height: 20px; font-family: garamond, bookman old style, times new roman, arial narrow, arial; color: #5b7085; /*color:#3c4a55;*/ }
+tfoot > tr > td#prev { width: 58px; height: 20px; text-align: left; background-color: #ffffff; }
+tfoot > tr > td#next { width: 58px; height: 20px; text-align: right; background-color: #ffffff; }
+.deportes .noticia_principal .flecha { width: 0; height: 0; border-top: 10px solid #B90D0D; border-right: 10px solid transparent; border-left: 10px solid transparent; margin-left: 10px;}
+.deportes .noticia_principal .label_categoria { background: #B90D0D; color: #fff; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; line-height: 1.2; text-transform: uppercase; width: 968px; padding: 5px 10px; display: inline-block; }
+.deportes .noticia_principal .img_large { margin-top: -10px; display: inline-block; width: 988px; height: auto; }
+.deportes .noticia_principal .img_large img { margin: 0; }
+.deportes .noticia_principal .img_large .caption { position: relative; width: 958px; padding: 10px 15px; background: rgba(0, 0, 0, 0.8); height: 80px; margin-top: -100px; }
+.deportes .noticia_principal .img_large .caption h1 { height: auto; margin: 5px 0px; }
+.deportes .noticia_principal .img_large .caption h1 a { height: auto; display: table-cell; vertical-align: middle; color: #f2f2f2; text-decoration: none; font-size: 28px; font-family: Georgia, serif; font-weight: bold; }
+.deportes .noticia_principal .img_large .caption h1 a:hover { text-decoration: underline; }
+.deportes .noticia_principal .resumen_large p span { font-weight: bold; color: #e3001c;}
+.deportes .slider_deportes { width: 750px; float: left; background: #F4F4F4; display: inline-block; padding: 0px 10px 10px 10px; margin-right: 10px; height: 455px; border: 1px solid #ccc; /* remove the list styles, width : item width * total items */ /* width of the item, in this case I put 250x250x gif */ /* Styling for prev and next buttons */ }
+.deportes .slider_deportes .flecha { width: 0; height: 0; border-top: 10px solid #B90D0D; border-right: 10px solid transparent; border-left: 10px solid transparent; margin-left: 10px; }
+.deportes .slider_deportes .label_categoria { margin-right: -11px; margin-top: -1px; background: #B90D0D; color: #fff; font-family: Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.2; font-size: 12px; text-transform: uppercase; width: 752px; padding: 5px 10px; display: inline-block; }
+.deportes .slider_deportes #slides { margin-top: 5px; overflow: hidden; /* fix ie overflow issue */ position: relative; width: 250px; height: 345px; border: 1px solid #ccc; position: absolute; left: 520px; }
+.deportes .slider_deportes #slides ul { position: relative; left: 0; top: 0; list-style: none; margin: 0; padding: 0; width: 250px; height: 555px; }
+.deportes .slider_deportes #slides li { width: 250px; height: 180px; }
+.deportes .slider_deportes #slides li img { padding: 5px; background: #fff; }
+.deportes .slider_deportes #buttons { padding: 0 0 5px 0; float: right; }
+.deportes .slider_deportes #buttons a { display: none; width: 31px; height: 32px; text-indent: -999em; float: left; outline: 0; }
+.deportes .slider_deportes a#prev { background: url(arrow.gif) 0 -31px no-repeat; }
+.deportes .slider_deportes a#prev:hover { background: url(arrow.gif) 0 0 no-repeat; }
+.deportes .slider_deportes a#next { background: url(arrow.gif) -32px -31px no-repeat; }
+.deportes .slider_deportes a#next:hover { background: url(arrow.gif) -32px 0 no-repeat; }
+.deportes .slider_deportes #image { margin-top: 5px; height: 345px; width: 490px; display: block; float: left; margin-right: 5px; }
+.deportes .slider_deportes #image img { padding: 5px; border: 1px solid #ccc; background: #fff; height: 335px; width: 480px; }
+.deportes .slider_deportes .clear { clear: both; }
+.deportes .slider_deportes .paginador { height: 20px; }
+.deportes .slider_deportes #bullets { list-style: none; margin: 0; padding: 0; }
+.deportes .slider_deportes #bullets li { display: inline; }
+.deportes .slider_deportes #bullets li a { display: block; width: 10px; height: 10px; background: #111; margin-right: 5px; text-indent: -9999px; float: left; }
+.deportes .slider_deportes #bullets li a:hover, .deportes .slider_deportes #bullets li a:active { background: #FA0A0A; }
+.deportes .slider_deportes .resumen { margin-top: 20px;}
+.deportes .slider_deportes .resumen span { font-weight: bold; }
+.deportes .slider_deportes .resumen span a { color: #e3001c; text-decoration: none; }
+.deportes .slider_deportes .resumen span a:hover { text-decoration: underline; }
+.deportes .tabla_deportes { width: 185px; background: #fff; height: 455px; float: left; padding: 0px 9px 9px; border: 1px solid #ccc; }
+.deportes .tabla_deportes .flecha { width: 0; height: 0; border-top: 10px solid #B90D0D; border-right: 10px solid transparent; border-left: 10px solid transparent; margin-left: 10px; }
+.deportes .tabla_deportes .label_categoria { margin-right: -10px; margin-top: -1px; background: #B90D0D; color: #fff; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; line-height: 1.2; text-transform: uppercase; width: 185px; padding: 5px 10px; display: inline-block; }
+.deportes .noticias_home { width: 770px; float: left; display: inline-block; margin-right: 12px; }
+.deportes .noticias_home .publicidad_deportes770x90 img { padding-bottom: 10px; }
+.deportes .noticias_home .publicidad_deportes770x90 iframe { padding-bottom: 10px; }
+.deportes .noticias_home .noticia { border-top: 2px solid black; width: auto; height: auto; display: inline-block; padding: 10px 0px 5px 0px; }
+.deportes .noticias_home .noticia .img { float: left; width: 290px; margin-right: 10px; }
+.deportes .noticias_home .noticia .texto { float: left; width: 470px; }
+.deportes .noticias_home .noticia .texto h1 { height: auto; margin: 0px; }
+.deportes .noticias_home .noticia .texto h1 a { height: auto; display: table-cell; vertical-align: middle; color: #1a1a1a; text-decoration: none; font-size: 20px; font-family: Georgia, serif; font-weight: bold; }
+.deportes .noticias_home .noticia .texto h1 a:hover { text-decoration: underline; }
+.deportes .noticias_home .noticia .texto p span { font-weight: bold; color: #e3001c; }
+.deportes .contenedor_lateral { width: 205px; float: left; }
+.deportes .contenedor_lateral .noticia_lateral { width: 185px; background: #f4f4f4; height: auto; padding: 0px 9px 10px; border: 1px solid #ccc; margin-bottom: 10px; }
+.deportes .contenedor_lateral .noticia_lateral .noticia h1 { height: auto; margin: 10px 0px; }
+.deportes .contenedor_lateral .noticia_lateral .noticia h1 a { height: auto; display: table-cell; vertical-align: middle; color: #1a1a1a; text-decoration: none; font-size: 16px; font-family: Georgia, serif; font-weight: bold; }
+.deportes .contenedor_lateral .noticia_lateral .noticia h1 a:hover { text-decoration: underline; }
+.deportes .contenedor_lateral .publicidad_deportes205x90 img { padding-bottom: 10px; }
+.deportes .contenedor_lateral .publicidad_deportes205x90 iframe { padding-bottom: 10px; }
+.deportes .contenedor_lateral .publicidad_deportes205x60 img { padding-bottom: 10px; }
+.deportes .contenedor_lateral .publicidad_deportes205x60 iframe { padding-bottom: 10px; }
+.deportes blockquote { width: 300px; padding: 0px 15px; border: 1px solid #ccc; float: right; margin: 0px 0px 0px 15px; }
+.deportes blockquote img { width: 300px; height: auto; }
+.deportes blockquote strong { background: #e1e1e1; padding: 5px 10px; width: 310px; display: block; font-size: 18px; margin: 0px 0px 10px -15px; }
+
+.attachment-thumbnail{width:150px; height:100px;border-radius:5px;margin:0 auto; clear:both;}
+.ev-widget-post-tittle-main{text-align:center;margin-bottom:1px;height:100px;font-weight:bold;color:#ec5c00;}
+
+.ev-widget-post-tittle ul li h3 a {height:100px;font-weight:bold;color:#ec5c00;}
+.ev-widget-post-tittle-main ul li h3 a {height:85px;font-weight:bold;color:#ec5c00;}
+.ev-widget-post ul li h3 a {font-weight:bold;color:#ec5c00;}
+.ev-widget-post-tittle .ev-widget-post-tittle-main{font-weight:bold;color:#ec5c00;}

@@ -26,7 +26,7 @@
 										</div>
 									</div>
 										<div class="contacto">
-											<div id="contacto1"><a href="http://www.elinformador.com.ve/?page_id=4512">Contáctenos <span>su opinion nos interesa</span></a></div>
+											<div id="contacto1"><a href="http://www.elinformador.com.ve/?page_id=4512">Contáctenos <span>su opinión nos interesa</span></a></div>
 											<div id="contacto2"><a href="http://www.elinformador.com.ve/?page_id=4519">Quiénes Somos <span>El Informador C.A.</span></a></div>
 										</div>
 								</div>

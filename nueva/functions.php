@@ -24,7 +24,7 @@ register_nav_menus( array(
 function my_init_method() {
     if (!is_admin()) {
         wp_deregister_script( 'jquery' );
-        wp_register_script( 'jquery', '/wp-content/themes/elinformador/scripts/jquery.min.js');
+        wp_register_script( 'jquery', '/wp-content/themes/nueva/js/vendor/jquery-1.9.1.min.js');
         wp_enqueue_script( 'jquery' );
     }
 }
@@ -248,7 +248,7 @@ add_action( 'admin_head-post-new.php', 'titulo_contador_js');
 
 // funcion
 function contador(){
-$contador = '<script type="text/javascript" src="http://www.elinformador.com.ve/wp-admin/js/contador.js"></script>';
+$contador = '<script type="text/javascript" src="http://192.168.132.22/wp-admin/js/contador.js"></script>';
 
 /*$contador = '<script type="text/javascript" src="http://www.paginainteligente.com/elinformador/wp-admin/js/contador.js"></script>';*/
 echo $contador;

@@ -6,8 +6,8 @@
 								<div id="mask">
 								<ul>
 									<?php
-										$clases=["firstanimation","secondanimation","thirdanimation","fourthanimation","fifthanimation"];
-										$ides=["first","second","third","fourth","fifth"];
+										$clases =array("firstanimation","secondanimation","thirdanimation","fourthanimation","fifthanimation");
+										$ides =array("first","second","third","fourth","fifth");
 										$slidecat = get_option("sucesos");
 										$slidecount = get_option("5");
 									?>
@@ -54,7 +54,7 @@
 						?>
 						<a href="<?php the_permalink(); ?>"><img class="post_not_fot" align="center" src="<?php echo $pimagen[0];?>" alt="<?php echo $tit; ?>" width="100%" height="100%" /></a>
 						<?php endif ?>
-						<div class="post_not_txt"><a href="<?php the_permalink(); ?>"><?php echo substr($tit,0,45)?><span> [...]</span></a></div>
+						<div class="post_not_txt"><a href="<?php the_permalink(); ?>"><?php echo substr($tit,0,40)?><span> [...]</span></a></div>
 					</div>
 					<?php $i++; endwhile; ?>
 					<?php wp_reset_query(); ?>

@@ -3,43 +3,72 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame Remove this if you use the .htaccess -->
 	<head>
+    <?php wp_head(); ?>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="author" content="elinformador" >
+		<meta name="author" content="Diario el Informador - Frank Barrera (farkbarn)" >
 		<meta name="classification" content="noticias, actualidad, Venezuela" >
 		<meta name="keywords" content="elinformador, el informador, diario, periódico, Venezuela" >
 		<meta name="viewport" content="width=device-width">
 		<meta name="description" content="periodico web - diario de barquisimeto - medio de comunicación ">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="wp-content/themes/nueva/style.css">
-<!--		<link rel="stylesheet" href="wp-content/themes/nueva/responsive.css">-->
-		<link rel="stylesheet" href="wp-content/themes/nueva/slider.css">
-		<link rel="icon" type="image/gif" href="wp-content/themes/nueva/img/favicon.gif" />
-		
-		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name');?> EDICION</title>
-		
+		<?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."style.css") ?>
+		<?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."responsive.css") ?>
+		<?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."slider.css") ?>
 		<!--<link rel="stylesheet" href="css/normalize.min.css">-->
 		<!--<link rel="stylesheet" href="css/main.css">-->
+		<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+		<?php versioned_javascript($GLOBALS["TEMPLATE_RELATIVE_URL"]."js/vendor/modernizr-2.6.1.min.js") ?>
 		<script type='text/javascript' src='http://www.elinformador.com.ve/openx/www/delivery/spcjs.php?id=1'></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.5.3/jquery-ui.min.js" ></script>
+		<script>window.jQuery || document.write('<script src="<?php echo $GLOBALS["TEMPLATE_RELATIVE_URL"] ?>js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+		<!-- Wordpress Head Items -->
+		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+
 		<script src="wp-content/themes/nueva/js/plugins.js"></script>
 		<script src="wp-content/themes/nueva/js/main.js"></script>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
 		<script type="text/javascript" src="wp-content/themes/nueva/js/jquery.cycle.all.js"></script>
-		<script type="text/javascript">
-$.fn.cycle.defaults.timeout = 6000;
-$(function() {
-    $('#img_sil, #tit_sil_cod, #ext_sil_cod').cycle({
-    fx:     'fade',
-    speed:  'fast',
-    timeout: 0,
-    next:   '#next2',
-    prev:   '#prev2'});
-});
-</script>
 
+		<link rel="icon" type="image/gif" href="wp-content/themes/nueva/img/favicon.gif" />
+		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name');?> EDICION</title>
+
+<script type="text/javascript">//<![CDATA[
+$(function(){
+    $('#silueta article:gt(0)').hide();
+    setInterval(function(){
+      $('#silueta article:first-child').fadeOut(0)
+         .next('article').fadeIn(1000)
+         .end().appendTo('#silueta');}, 4000);
+});
+//]]></script>
+
+<script type="text/javascript">//<![CDATA[
+$(function(){
+    $('#marq_tit article:gt(0)').hide();
+    setInterval(function(){
+      $('#marq_tit article:first-child').fadeOut(0)
+         .next('article').fadeIn(1000)
+         .end().appendTo('#marq_tit');}, 6000);
+});
+//]]></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40942673-1', 'elinformador.com.ve');
+  ga('send', 'pageview');
+
+</script>
 		<!--[if lt IE 9]>
 			<script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
 		<![endif]-->
@@ -57,7 +86,22 @@ $(function() {
 <!-- PUBLICIDAD -->
 			<div class="zon_pub">
 				<div id="zon_pub_A">
+					<?php include("zon_pub/zon_sobre_A_988x150.html");?>
+				</div>
+			</div>
+			<div class="zon_pub">
+				<div id="zon_pub_A">
+					<?php include("zon_pub/zon_A_Esp.html");?>
+				</div>
+			</div>
+			<div class="zon_pub">
+				<div id="zon_pub_A">
 					<?php include("zon_pub/zon_A.html");?>
+				</div>
+			</div>
+			<div class="zon_pub">
+				<div id="zon_pub_A">
+					<?php include("zon_pub/zon_A2.html");?>
 				</div>
 			</div>
 			<div class="limpiar"></div>
@@ -118,14 +162,13 @@ $(function() {
 					</div>
 				</div>
 <!-- -->
-			<?php include("includes/silueta_2.php");?>
+			<?php include("includes/silueta.php");?>
 			</div><!-- FIN CABEZAL -->
 <!-- MENU -->
 			<div id="con_menu">
-				<!--<div class="" id="social"></div>-->
 				<div class="" id="menu">
 					<div id="men_izq">
-					<div id="men_ini"><a href="<?php echo home_url(); ?>"><img id="ico_hom" src="wp-content/themes/nueva/img/btn_home.png" /></a></div>
+					<div id="men_ini"><a href="<?php echo home_url(); ?>"><img id="ico_hom" src="<?php echo home_url(); ?>/wp-content/themes/nueva/img/btn_home.png" /></a></div>
 					<div id="men_con">
 						<div id="men_barq_reg"><a href="<?php echo home_url(); ?>/?cat=209">Barquisimeto + Regiones</a></div>
 							<div id="con_3_4">
@@ -161,7 +204,7 @@ $(function() {
 					</div>
 				</div>
 					<div class="contacto">
-						<div id="contacto1"><a href="http://www.elinformador.com.ve/?page_id=4512">Contáctenos <span>su opinion nos interesa</span></a></div>
+						<div id="contacto1"><a href="http://www.elinformador.com.ve/?page_id=4512">Contáctenos <span>su opinión nos interesa</span></a></div>
 						<div id="contacto2"><a href="http://www.elinformador.com.ve/?page_id=4519">Quiénes Somos <span>El Informador C.A.</span></a></div>
 					</div>
 			</div>
@@ -169,8 +212,10 @@ $(function() {
 <div class="sep"></div>
 <div class="espacio05"></div>
 			<div id="marquesina">
-				<div id="rapida"> + RÁPIDAS </div>
-				<div id="marq_tit"> titular de la noticia </div>
+				<div id="rapida"> <p> + RÁPIDAS </p></div>
+				<div id="marq_tit">
+					<?php include("includes/marquesina.php");?>
+				</div>
 			</div>
 			<div class="limpiar"></div>
 				<div class="zon_pub">

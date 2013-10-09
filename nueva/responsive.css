@@ -16,6 +16,11 @@
 	.logo{width:65%;height: 100%;}
 	#silueta{width:35%;height:100%;}
 	#menu{width:75%;height:43px;float:right;font-size:90%;}
+	.lateral {display:none;}
+	.noticias_sup, .noticias_inf{width:100%;}
+	.not_col_1{width:75%;}
+	.not_col_2{width:23%;}
+	.not_col_2 .label_container .label_categoria{width:90%;}
 }
 
 
@@ -24,6 +29,11 @@
 	.logo{height: 100%;width:100%;border-radius:10px 10px 0 0;}
 	#silueta,.post_slider{display: none;}
 	.slider{width:100%;}
+	.fecha{margin-top:7px;}
+	.not_col_1{width:70%;}
+	.not_col_2{width:27.5%;}
+	.pie_enl{font-size:9px;}
+
 /* ==============
  *  MENU MAX-800
  * ============== */
@@ -34,12 +44,14 @@
 	#menu{width:100%;height:120px;float:right;font-size:85%;}
 		#men_izq{width:55%;height:120px;float:left;}
 			#men_ini{width:15%;height:32%;float:right;margin-left:2.5%;margin-right:2.5%;margin-top:5%;border-radius:5px;border-bottom: 3px solid #800000; border-top:3px solid #800000;}
+			#men_ini a{border-radius:0px;}
 			 #ico_hom{margin:20% 20% 20% 25%;width:50%; height:50%;float:left;}
 			#men_con{width:80%;height:40px;float:left;}
 				#men_barq_reg{width:100%;height:40px;float:left; border-bottom: none;text-align:center;}
 				#con_3_4{width:100%;height:40px;float:right;}
 					#men_dep{width:100%;height:40px;float:left;border-bottom: none;text-align:center;}
-					#men_zon_soc{width:100%;height:40px;float:right;border-bottom: none;text-align:center;border-radius:0 0 0 15px;}
+					#men_zon_soc{width:100%;height:40px;float:right;border-bottom: none;text-align:center;}
+					#men_zon_soc a {border-radius:0 0 0 15px;}
 		#men_der{width:45%;height:40px;float:right;}
 			#men_neg{width:100%;height:40px;float:right;border-bottom: none;text-align:center;}
 			#con_6_7{width:100%;height:40px;float:right;}
@@ -49,20 +61,38 @@
 }
 
 @media only screen and (max-width: 700px){
+
 #contacto1{display: none;}
 .noticia_linea{display: none;}
 #cont_busc{width:100%;}
 #buscadorinp{width:80%;}
 #s{width:70%;}
 .boton{margin-top: 0.2em;}
+.pie_enl{display:none;}
 }
+
+@media only screen and (max-width: 600px){
+}
+
 
 @media only screen and (max-width: 500px){
 #rapida{width: 20%;}
 #marq_tit{width: 80%;}
+.not_col_2{display:none;}
+.not_col_1{width:100%;}
 }
 
 @media only screen and (max-width: 480px){
+.tit_not a{font-size:15px;}
+
+#rapida{display:none;}
+#marq_tit{display:none;}
+
+#s{width:60%;}
+.label_buscador{display: none;}
+.busqueda{margin:0 0 0 15px;}
+
+
 	#contenedor{width:100%;max-width:99%;}
 	.logo{width:100%; height: 100;}
 	.cabezal{height: 90px;width:100%;}
@@ -89,12 +119,7 @@
 				#men_suc{height:25px;width:100%;float:bottom;border-bottom: none;text-align:center;border-radius:0 0 15px 15px;}
 }
 
-@media only screen and (max-width: 480px){
-#s{width:60%;}
-.label_buscador{display: none;}
-.busqueda{margin:0 0 0 15px;}
-}
-
 @media only screen and (max-width: 375px){
-	#contenedor{width:370px; min-width: 370px; max-width:370px;}
+	#contenedor{width:98%; min-width: 120px; max-width:370px;}
+	#men_ini{height:15%;}
 }
