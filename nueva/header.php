@@ -21,10 +21,11 @@
 		<!--<link rel="stylesheet" href="css/main.css">-->
 		<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
 		<?php versioned_javascript($GLOBALS["TEMPLATE_RELATIVE_URL"]."js/vendor/modernizr-2.6.1.min.js") ?>
-		<script type='text/javascript' src='http://www.elinformador.com.ve/openx/www/delivery/spcjs.php?id=1'></script>
+		<!-- <script type='text/javascript' src='http://www.elinformador.com.ve/openx/www/delivery/spcjs.php?id=1'></script> -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2"></script>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.5.3/jquery-ui.min.js" ></script>
 		<script>window.jQuery || document.write('<script src="<?php echo $GLOBALS["TEMPLATE_RELATIVE_URL"] ?>js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
@@ -38,7 +39,7 @@
 
 		<link rel="icon" type="image/gif" href="wp-content/themes/nueva/img/favicon.gif" />
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name');?> EDICION</title>
-
+<!-- <<<< -->
 <script type="text/javascript">//<![CDATA[
 $(function(){
     $('#silueta article:gt(0)').hide();
@@ -59,16 +60,6 @@ $(function(){
 });
 //]]></script>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-40942673-1', 'elinformador.com.ve');
-  ga('send', 'pageview');
-
-</script>
 		<!--[if lt IE 9]>
 			<script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
 		<![endif]-->
@@ -213,9 +204,7 @@ $(function(){
 <div class="espacio05"></div>
 			<div id="marquesina">
 				<div id="rapida"> <p> + RÁPIDAS </p></div>
-				<div id="marq_tit">
-					<?php include("includes/marquesina.php");?>
-				</div>
+				<div id="marq_tit"> <?php include("includes/marquesina.php");?>	</div>
 			</div>
 			<div class="limpiar"></div>
 				<div class="zon_pub">

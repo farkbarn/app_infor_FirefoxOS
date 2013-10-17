@@ -24,7 +24,7 @@
 										<?php if(has_post_thumbnail()): // si tiene imagen 
 											$pimagen =  wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' , false );  // capturando arreglo url, ancho, alto
 										?>
-											<img align="center" src="<?php echo $pimagen[0];?>" alt="<?php the_title(); ?>" width="100%" height="100%" />
+											<img align="center" class="img_slid" src="<?php echo $pimagen[0];?>" alt="<?php the_title(); ?>" width="100%" height="100%" />
 										<?php endif ?>
 										</a>
 										<div class="tooltip">

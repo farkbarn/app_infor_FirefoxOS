@@ -84,9 +84,7 @@
 
 @media only screen and (max-width: 480px){
 .tit_not a{font-size:15px;}
-
-#rapida{display:none;}
-#marq_tit{display:none;}
+#rapida, #marq_tit, #marquesina, #silueta, #cont_silueta{display:none;}
 
 #s{width:60%;}
 .label_buscador{display: none;}
