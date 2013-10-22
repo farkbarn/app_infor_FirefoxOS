@@ -40,7 +40,7 @@
 							<h2 class="tit_not"><a href="<?php echo $link;?>"> <?php echo $tit;?> </a></h2>
 							<div class="con_fot_not_col1" >
 							<?php if(has_post_thumbnail()): // si tiene imagen 
-								$pimagen =  wp_get_attachment_image_src( get_post_thumbnail_id(), 'full', false );
+								$pimagen =  wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium', false );
 							?>
 								<a href="<?php echo $link;?>"> <img align="center" src="<?php echo $pimagen[0];?>" alt="<?php echo $tit;?>" width="100%" height="100%" /></a>
 							<?php endif ?>
@@ -79,7 +79,7 @@
 							<div class="nota_col2">
 								<div class="con_fot_not_col2" >
 								<?php if(has_post_thumbnail()): // si tiene imagen 
-									$pimagen =  wp_get_attachment_image_src( get_post_thumbnail_id(), 'full', false );
+									$pimagen =  wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium', false );
 								?>
 									<a href="<?php echo $link;?>"><img class="fot_not" align="center" src="<?php echo $pimagen[0];?>" alt="<?php echo $tit;?>" width="100%" height="100%" /></a>
 								<?php endif ?>
@@ -154,7 +154,7 @@
 								<h2 class="tit_not"><a href="<?php echo $link;?>"> <?php echo $tit;?> </a></h2>
 								<div class="con_fot_not_col1" >
 								<?php if(has_post_thumbnail()): // si tiene imagen 
-									$pimagen =  wp_get_attachment_image_src( get_post_thumbnail_id(), 'full', false );
+									$pimagen =  wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium', false );
 								?>
 									<a href="<?php echo $link;?>"><img align="center" src="<?php echo $pimagen[0];?>" alt="<?php echo $tit;?>" width="100%" height="100%" /></a>
 								<?php endif ?>
@@ -193,7 +193,7 @@
 							<div class="nota_col2">
 								<div class="con_fot_not_col2" >
 								<?php if(has_post_thumbnail()): // si tiene imagen 
-									$pimagen =  wp_get_attachment_image_src( get_post_thumbnail_id(), 'full', false );
+									$pimagen =  wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium', false );
 								?>
 									<a href="<?php echo $link;?>"><img class="fot_not" align="center" src="<?php echo $pimagen[0];?>" alt="<?php echo $tit;?>" width="100%" height="100%" /></a>
 								<?php endif ?>

@@ -210,7 +210,6 @@ border-radius: 8px;font-weight:normal;line-height:0.8em;}
 .alignnone, .size-medium{width:100%;}
 
 .noticias_sup,.noticias_inf {float:left; width: 69.2%;}
-.noticias_dep {float:left; width: 90%;}
 
 .not_col_1 {float:left; width: 69%;line-height:1.7em; margin-left:3px;}
 .nota_col1{padding: 10px 10px 10px 10px; border-radius: 5px; /*border-bottom: 2px solid black;*/ background-color: white; overflow:hidden;}
@@ -250,7 +249,7 @@ border-radius: 8px;font-weight:normal;line-height:0.8em;}
 .not_col_2 .edicion_impresa img:hover { opacity: 0.6; }
 .not_col_2 .clasificado { border: 1px solid #e6e6e6; padding: 10px; margin-bottom: 10px; }
 .not_col_2 .clasificado img:hover { opacity: 0.6; }
-.not_col_2 .label_container { position: relative; z-index: 9; width: 100%; }
+.not_col_2 .label_container { position: relative; z-index: 9; width: 100%; height:25px;}
 .not_col_2 .label_container .flecha { width: 0; height: 0; border-top: 10px solid white; border-right: 10px solid transparent; border-left: 10px solid transparent; margin-left: 10px; margin-top: -25px; }
 .not_col_2 .label_container .label_categoria { background: #ec5c00; color: #fff; /*font-family: Arial, Helvetica, sans-serif;*/ font-weight: bold; font-size: 14px; text-transform: uppercase; width: 93%; padding: 4px 8px; line-height: 1.2;  display: inline-block; position: relative; z-index: -1; text-align: right; }
 .not_col_2 .tit_not{padding: 0 4px 0 4px;}
@@ -281,9 +280,7 @@ font-size:12px; /*line-height:30px;*/ border-radius:0 20px 20px 0; -webkit-borde
 -moz-border-radius:0 20px 20px 0; border:0; /*text-shadow:#C17C3A 0 -1px 0;*/ padding: 5px;
 }
 
-
 .lateral{ width: 29.9%; float: right; margin:0 3px 0 5px;}
-.lateral_dep{ width: 3.3%; float: left;}
 #pdfs{border: 15px solid rgb(163, 163, 163);border-radius: 5px;background-color: rgb(163, 163, 163);float: right;margin-right: 50px;}
 #pdfs img{border-radius:5px;border:3px solid white;}
 
@@ -332,21 +329,26 @@ tfoot > tr > td#next { width: 58px; height: 20px; text-align: right; background-
 
 
 
-
-.noticias_dep .nota_col1 .tit_not a{}
+.noticias_dep {float:left; width: 70%;}
+.deportes {margin-top:11px;}
+.noticias_dep .not_col_1 {float:left; width: 100%;line-height:1.7em; margin-left:3px;}
+.noticias_dep .nota_col1{padding: 10px 10px 10px 10px; border-radius: 5px; /*border-bottom: 2px solid black;*/ background-color: white; overflow:hidden; width: 100%;}
+.noticias_dep .nota_col1 .tit_not a{font-size:20px;}
 .noticias_dep .nota_col1 .con_fot_not_col1{width:50%; height:auto; float:left; margin-right:5px;display: inline-block;}
+.noticias_dep .txt_not {color: black; padding-top:30px; line-height: 1.8em; font-weight: normal; font-size: 12px; margin:0 10px 0 10px;}
+.lateral_dep{ width: 26.7%; float: right; margin:0 3px 0 5px; widht:265px; height:900px; border:solid black 1px;}
+
 
 /*********************************************** D E P O R T E S ***********************************************/
 
-.deportes .noticia_principal .flecha { width: 0; height: 0; border-top: 10px solid #B90D0D; border-right: 10px solid transparent; border-left: 10px solid transparent; margin-left: 10px;}
-.deportes .noticia_principal .label_categoria { background: #B90D0D; color: #fff; font-weight: bold; font-size: 11px; line-height: 1; text-transform: uppercase; width: 968px; padding: 5px 10px; display: inline-block; }
-.deportes .noticia_principal .img_large { margin-top: -10px; display: inline-block; width: 50% height: auto; }
-.deportes .noticia_principal .img_large img { margin: 0; }
-.deportes .noticia_principal .img_large .caption { position: relative; width: 958px; padding: 10px 15px; background: rgba(0, 0, 0, 0.8); height: 80px; margin-top: -100px; }
-.deportes .noticia_principal .img_large .caption h1 { height: auto; margin: 5px 0px; }
-.deportes .noticia_principal .img_large .caption h1 a { height: auto; display: table-cell; vertical-align: middle; color: #f2f2f2; text-decoration: none; font-size: 28px; font-weight: bold; }
+.deportes .noticia_principal .img_large { margin-top: -10px; display: inline-block; width: 100% height: auto; }
+.deportes .noticia_principal .img_large img { margin: 0; border-radius:10px; width:100%;}
+.deportes .noticia_principal .img_large .caption { position: relative; width: 100%; padding: 7px 0px; background: rgba(0, 0, 0, 0.8); height: 80px; margin-top: -100px; border-radius:10px;}
+.deportes .noticia_principal .img_large .caption h1 { margin: 5px 0px; }
+.deportes .noticia_principal .img_large .caption h1 a { display: table-cell; vertical-align: middle; color: #f2f2f2; text-decoration: none; font-size: 28px; font-weight: bold; padding:10px; line-height:1.5em;}
 .deportes .noticia_principal .img_large .caption h1 a:hover { text-decoration: underline; }
 .deportes .noticia_principal .resumen_large p span { font-weight: bold; color: #e3001c;}
+.deportes .noticia_principal .resumen_large p { margin: 0 15px;}
 
 .deportes .slider_deportes { width: 750px; float: left; background: #F4F4F4; display: inline-block; padding: 0px 10px 10px 10px; margin-right: 10px; height: 455px; border: 1px solid #ccc; /* remove the list styles, width : item width * total items */ /* width of the item, in this case I put 250x250x gif */ /* Styling for prev and next buttons */ }
 .deportes .slider_deportes .flecha { width: 0; height: 0; border-top: 10px solid #B90D0D; border-right: 10px solid transparent; border-left: 10px solid transparent; margin-left: 10px; }
@@ -411,5 +413,6 @@ footer{clear:both;}
 
 .wp-pagenavi span.current{text-decoration:none; color:green; font-weight:bold;}
 .wp-pagenavi a, .wp-pagenavi span{text-decoration:none; color:black; font-weight:normal;}
+.wp-pagenavi {font-size:10px;}
 
 

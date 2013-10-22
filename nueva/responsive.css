@@ -120,4 +120,5 @@
 @media only screen and (max-width: 375px){
 	#contenedor{width:98%; min-width: 120px; max-width:370px;}
 	#men_ini{height:15%;}
+	.lateral_dep{display:hide;}
 }

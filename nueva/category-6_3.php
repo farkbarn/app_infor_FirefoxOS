@@ -1,37 +1,4 @@
 <?php get_header(); ?>
-
-<!-->
-<!-- <<<<>>>> -->
-
-<div class="deportes">
-	<div class="noticia_principal">
-		<div class="limpiar"></div>
-		<?php 
-			query_posts('cat=25&posts_per_page=1' ); 
-			while ( have_posts() ) : the_post(); 			
-			$nom_cat=exclude_categoria();// obtengo nombre de cat
-			$cat_id = get_cat_ID($nom_cat);// obtengo id con el nombre de cat
-			$cat_link = get_category_link( $cat_id );//obtengo url por id de cat
-			$link=get_permalink(); $tit=get_the_title(); // obtengo link y titulo
-		?>
-		<div class="img_large">
-			<?php if(has_post_thumbnail()): // si tiene imagen 
-				$pimagen =  wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium', false );
-			?>
-				<a href="<?php echo $link;?>"> <img align="center" src="<?php echo $pimagen[0];?>" alt="<?php echo $tit;?>" width="100%" height="100%" /></a>
-			<?php endif ?>
-			<div class="caption">
-				<h1><a href="<?php  the_permalink(); ?>" ><?php the_title();?></a></h1>
-			</div>
-	</div>
-	<div class="resumen_large">
-		<p class="txt_not"> <span><?php the_time('h:i A');?> | <a href="<?php echo $cat_link;?>"><? echo $nom_cat;?> </a> | </span><?php the_excerpt();?></p>
-	</div>
-	<?php  endwhile; ?>
-	<?php wp_reset_query(); ?>
-</div>
-<div class="clear"></div> <!-- clear -->
-<!-->
 <?php $nom_wid='Sidebar Deportes';?>
 <?php $max=5;?>
 <!-- <<<<>>>> -->
@@ -44,7 +11,7 @@
 						<?php query_posts('cat=6&posts_per_page=3'); 
 						$i=1;
 						while ($i <= 3):the_post();
-						$nom_cat = exclude_categoria();// obtengo nombre de cat
+						$nom_cat=exclude_categoria();// obtengo nombre de cat
 						$cat_id = get_cat_ID($nom_cat);// obtengo id con el nombre de cat
 						$cat_link = get_category_link( $cat_id );//obtengo url por id de cat
 						$link=get_permalink(); $tit=get_the_title(); // obtengo link y titulo
@@ -54,7 +21,7 @@
 							<h2 class="tit_not"><a href="<?php echo $link;?>"> <?php echo $tit;?> </a></h2>
 							<div class="con_fot_not_col1" >
 							<?php if(has_post_thumbnail()): // si tiene imagen 
-								$pimagen =  wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium', false );
+								$pimagen =  wp_get_attachment_image_src( get_post_thumbnail_id(), 'full', false );
 							?>
 								<a href="<?php echo $link;?>"> <img align="center" src="<?php echo $pimagen[0];?>" alt="<?php echo $tit;?>" width="100%" height="100%" /></a>
 							<?php endif ?>
@@ -87,6 +54,155 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <<<<>>>> -->
+
+<br />
+<div class="deportes">
+	<div class="noticia_principal">
+	<div class="limpiar"></div>
+		           <?PHP 
+			     query_posts('cat=25&posts_per_page=1' ); 
+			     while ( have_posts() ) : the_post(); 			
+                           ?>
+				<div class="img_large">
+			<?php the_post_thumbnail('depor_destacado');  ?>
+			<div class="caption">
+				<h1><a href="<?php  the_permalink(); ?>" ><?php the_title();?></a></h1>
+		   </div>
+		</div>
+		<div class="resumen_large">
+			 <p class="txt_not_col1" ><span><?php  the_time('h:i A'); ?> | <?=exclude_categoria();?> |</span> <? the_excerpt();?></p>
+		</div>
+                <?php  endwhile; ?>
+            <?php wp_reset_query(); ?>   
+		<hr class="hr">
+	</div>
+  <div class="clear"></div> <!-- clear -->
+  <div class="slider_deportes">
+  		<!-- label -->
+	      	<div class="label_container">
+				<div class="label_categoria">EN IMÁGENES</div>
+				<div class="flecha"></div>
+			</div>
+			<div class="clear"></div>
+		<!-- fin label -->
+		<div id="image"></div>
+	  	<!--<a href="#" id="image"></a>-->
+		<div id="carousel">
+              <?PHP 
+			     query_posts('cat=26&posts_per_page=1' ); 
+			     while ( have_posts() ) : the_post();
+			  ?>
+			<div id="buttons">
+				<a href="#" id="prev"></a>
+				<a href="#" id="next"></a>
+			</div>
+			<div id="slides"> 
+				<ul>
+                  <?php
+				   $id=get_the_ID();
+					$args = array(
+						'post_type' => 'attachment',
+						'numberposts' => 6,
+						'post_parent' =>$id,
+						'post_mime_type' => 'image',
+					);
+					$attachments = get_posts($args);
+					$i=0;
+					if ($attachments) {
+						foreach ($attachments as $attachment) { 
+						$image_atts = wp_get_attachment_image_src( $attachment->ID, 'galeria_deporte' );
+						$image_atts2 = wp_get_attachment_image_src( $attachment->ID, 'galeria_deporte_thum' );
+						$i+=1
+					?>
+					<li><a href="<?php echo $image_atts[0]; ?>"><img src="<?php echo $image_atts2[0]; ?>" id="bullet-<?=$i;?>"/></a></li>
+                      <?php
+                          }
+                     }
+					  ?>
+				</ul>
+		</div>
+		</div>
+		<div class="clear"></div> <!-- clear -->
+		<div class="resumen"><p class="txt_not_col1"><span><a href="<?php  the_permalink(); ?>" ><?php the_title();?></a></span><? the_excerpt();?></p></div>
+               <?php  endwhile; ?>
+            <?php wp_reset_query(); ?>    
+      </div>
+
+<!-- QUITANDO TABLA DEPORTES -->
+<!-- QUITANDO TABLA DEPORTES -->
+   <div class="clear"></div> <!-- clear -->
+   <div class="espacio15"></div>
+
+   <div class="noticias_home">
+   	<div class="publicidad_deportes770x90">
+		<?php //include("pub/banner_deportes_770x90.html");?>
+   	</div>
+   		<!-- repetir noticia -->
+           <?PHP 
+			     query_posts('category_name=DEPORTE COLUMNA1&posts_per_page=3' ); 
+			     while ( have_posts() ) : the_post(); 			
+			?>
+   		<div class="noticia">
+   			<div class="img">
+   				<?php the_post_thumbnail('nota_deporte');  ?>
+   			</div>
+   			<div class="texto">
+   				<h1><a href="<?php  the_permalink(); ?>" ><?php the_title();?></a></h1>
+   				<p class="txt_not_col1" ><span><?php  the_time('h:i A'); ?> | <?=exclude_categoria();?> |</span> <? the_excerpt();?></p>
+   			</div>
+   		</div>
+            <?php  endwhile; ?>
+            <?php wp_reset_query(); ?>   
+   		<!-- fin repetir noticia -->
+   </div>
+   <div class="contenedor_lateral">
+   		<div class="publicidad_deportes205x90">
+			<?php //include("pub/banner_deportes_205x90.html");?>
+			</div>
+			<?php 
+			     query_posts('category_name=DEPORTE COLUMNA2&posts_per_page=2' ); 
+			     while ( have_posts() ) : the_post(); 			
+				?>
+		<div class="noticia_lateral">	
+		   	<div class="noticia">
+		   		<h1><a href="<?php  the_permalink(); ?>" ><?php the_title();?></a></h1>
+		   		<div class="img">
+		   			<?php the_post_thumbnail('side_deporte_thum');  ?>
+		   		</div>
+		   	</div>
+		</div>
+        <?php  endwhile; ?>
+        <?php wp_reset_query(); ?>   
+		<div class="publicidad_deportes205x60">
+			<?php //include("pub/banner_deportes_205x250.html");?>
+   		</div>
+   		<div class="publicidad_deportes205x60">
+			<!-- AREA NO USADA -->
+   		</div>
+   </div>
+   <div class="clear"></div> <!-- clear -->
+</div>
 <script>
 $(document).ready(function() {
 	//paginador
