@@ -62,15 +62,16 @@
 								<div id="zon_pub_I">
 									<?php include("zon_pub/zon_I.html");?>
 								</div>
+
 							</div>
 							<div class="label_container">
 								<div class="label_categoria"> + Destacadas</div>
 								<div class="flecha"></div>
 							</div>
 							<div class="clear"></div>
-							<?php query_posts('cat=14&posts_per_page=8'); 
+							<?php query_posts('cat=14&posts_per_page=7'); 
 							$i=1;
-							while ($i <= 8):the_post();
+							while ($i <= 7):the_post();
 							$nom_cat=exclude_categoria();// obtengo nombre de cat
 							$cat_id = get_cat_ID($nom_cat);// obtengo id con el nombre de cat
 							$cat_link = get_category_link( $cat_id );//obtengo url por id de cat
@@ -121,7 +122,7 @@
 					<div class="limpiar"></div>
 						<div class="zon_pub">
 							<div id="zon_pub_E">
-								<?php include("zon_pub/zon_E.html");?>
+								<?php include("zon_pub/zon_F2.html");?>
 							</div>
 						</div>
 					<div class="limpiar"></div>

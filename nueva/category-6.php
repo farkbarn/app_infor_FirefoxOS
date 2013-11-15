@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-
+<?php $nom_wid='Sidebar Deportes';?>
+<?php $max=5;?>
 <!-->
 <!-- <<<<>>>> -->
 
@@ -38,7 +39,13 @@
 <!-- NOTICIAS PRIMERA MITAD -->
 				<div class="espacio05"></div>
 				<div class="sep"></div>
-				<div class="espacio05"></div>
+				<div class="espacio03"></div>
+					<div class="zon_pub">
+						<div id="zon_pub_A">
+							<?php include("zon_pub/zon_dep_A.html");?>
+						</div>
+					</div>
+				<div class="espacio03"></div>
 					<div class="noticias_dep">
 						<div class="not_col_1"><!--abre columna 1 -->
 						<?php query_posts('cat=6&posts_per_page=3'); 
@@ -76,11 +83,30 @@
 					<div class="lateral_dep">
 						<div class="zon_pub">
 							<div id="zon_pub_J">
-								<?php //include("zon_pub/zon_J.html");?>
+								<?php include("zon_pub/zon_J.html");?>
 							</div>
+						</div>
+
+						<div class="zon_pub">
+							<div id="zon_pub_K">
+								<?php include("zon_pub/zon_K.html");?>
+							</div>
+						</div>
+
+						<div class="zon_pub">
+							<div id="zon_pub_L">
+								<?php include("zon_pub/zon_L.html");?>
+							</div>
+						</div>
+						<div class="side">
+							<?php if (!dynamic_sidebar($nom_wid));?>
 						</div>
 					</div>
 <!-- fin widget-->
+					<div class="limpiar"></div>
+					<div class="espacio05"></div>
+					<div class="sep"></div>
+					<div class="espacio05"></div>
 
 
 

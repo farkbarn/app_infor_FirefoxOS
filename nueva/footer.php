@@ -3,13 +3,13 @@
 						<div class="pie" align="center">
 							<div class="pie_int">
 								<div class="pie_enl" align="center">
-									<a href="#">inicio</a>&nbsp;&nbsp;|&nbsp;
-									<a href="#">barquisimeto + regiones </a>&nbsp;&nbsp;|&nbsp;
-									<a href="#">deportes </a>&nbsp;&nbsp;|&nbsp;
-									<a href="#">zona libre + sociales </a>&nbsp;&nbsp;|&nbsp;
-									<a href="#">negocios </a>&nbsp;&nbsp;|&nbsp;
-									<a href="#">venezuela + mundo </a>&nbsp;&nbsp;|&nbsp;
-									<a href="#">sucesos </a>
+									<a href="<?php echo home_url(); ?>">inicio</a>&nbsp;&nbsp;|&nbsp;
+									<a href="<?php echo home_url(); ?>/?cat=209">barquisimeto + regiones </a>&nbsp;&nbsp;|&nbsp;
+									<a href="<?php echo home_url(); ?>/?cat=6">deportes </a>&nbsp;&nbsp;|&nbsp;
+									<a href="<?php echo home_url(); ?>/?cat=7">zona libre + sociales </a>&nbsp;&nbsp;|&nbsp;
+									<a href="<?php echo home_url(); ?>/?cat=19">negocios </a>&nbsp;&nbsp;|&nbsp;
+									<a href="<?php echo home_url(); ?>/?cat=8">venezuela + mundo </a>&nbsp;&nbsp;|&nbsp;
+									<a href="<?php echo home_url(); ?>/?cat=5">sucesos </a>
 								</div>
 								<div class="busqueda">
 									<div id="cont_busc">

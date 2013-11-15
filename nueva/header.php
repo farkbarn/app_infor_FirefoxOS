@@ -134,17 +134,8 @@ $(function(){
 				</div>
 			</div>
 			<div class="zon_pub">
-				<div id="zon_pub_A">
-					<?php include("zon_pub/zon_A2.html");?>
-				</div>
-			</div>
-			<div class="limpiar"></div>
-			<div class="zon_pub">
 				<div id="zon_pub_B">
 					<?php include("zon_pub/zon_B.html");?>
-				</div>
-				<div id="zon_pub_B_2">
-					<?php include("zon_pub/zon_B2.html");?>
 				</div>
 			</div>
 			<div class="limpiar"></div>
